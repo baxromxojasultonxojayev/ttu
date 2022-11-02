@@ -1,0 +1,52 @@
+
+
+.FileUploadWithDrag {
+  box-sizing: border-box;
+  position: relative;
+  width: 500px;
+
+  .dropzone {
+    width: 100%;
+    cursor: pointer;
+    position: static;
+    height: 164px;
+    left: 0px;
+    top: 0px;
+    border: 1px dashed #D5DADD;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &.error {
+      border: 1px dashed rgba(247, 102, 89, 1);
+    }
+
+    .dropzone-icon {
+      color: #6b6966;
+      font-size: 50px;
+    }
+
+    .dropzone-title {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      margin: 8px 0;
+      color: #6b6966;
+    }
+
+    .button {
+      .btn-title {
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.006em;
+        text-align: center;
+      }
+    }
+  }
+}

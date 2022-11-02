@@ -1,0 +1,25 @@
+
+
+.BackButton {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  transition-duration: .3s;
+  border: 1px solid silver;
+
+  .icon {
+    font-size: 19px;
+  }
+
+  &:hover {
+    border-color: #0067F4;
+    color: #0067F4;
+  }
+
+}

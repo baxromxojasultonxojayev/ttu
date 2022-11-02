@@ -1,0 +1,13 @@
+
+@use '/src/scss/colors';
+
+.layout {
+  display: flex;
+}
+
+.content {
+  flex: 1;  
+  height: 100vh;
+  overflow: auto;
+  background-color: colors.$page-background;
+}

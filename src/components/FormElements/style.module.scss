@@ -1,0 +1,12 @@
+@use "/src/scss/colors";
+
+.tag {
+  padding: 0 10px;
+  background-color: colors.$borders;
+  border-radius: 6px;
+}
+
+.placeholder {
+  color: #909EAB;
+  font-weight: 400;
+}

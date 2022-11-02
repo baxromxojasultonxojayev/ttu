@@ -1,0 +1,49 @@
+
+
+.IconPicker {
+
+  .icon-wrapper {
+    width: 30px;
+    height: 30px;
+    border: 1px solid silver;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    cursor: pointer;
+    color: #0067F4;
+
+    &.error {
+      border-color: red !important;
+    }
+  
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+
+
+.IconPickerPopup {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 5px;
+
+  .icon-wrapper {
+    width: 30px;
+    height: 30px;
+    border: 1px solid silver;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    cursor: pointer;
+  
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+

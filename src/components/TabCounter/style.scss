@@ -1,0 +1,15 @@
+
+.TabCounter {
+  margin-left: 10px;
+  padding: 2px 5px;
+  border-radius: 30px;
+  background-color: rgba(192, 192, 192, 0.652);
+  color: rgb(88, 88, 88);
+  min-width: 40px;
+  text-align: center;
+}
+
+.react-tabs__tab--selected .TabCounter {
+  background-color: #0067F4;
+  color: #fff;
+}

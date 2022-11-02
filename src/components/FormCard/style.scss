@@ -1,0 +1,37 @@
+
+
+.FormCard {
+  padding: 16px;
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    // max-width: 700px;
+  }
+
+  .header {
+    box-shadow: inset 0px -1px 0px #E5E9EB;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // .title {
+    //   color: #6E8BB7;
+    // }
+  }
+
+  .content {
+    padding: 20px;
+  }
+  
+  .btns-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+}

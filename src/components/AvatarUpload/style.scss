@@ -1,0 +1,56 @@
+
+
+.AvatarUpload {
+  cursor: pointer;
+  position: relative;
+
+  .round-block {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    border: 1px solid silver;
+    object-fit: cover;
+  }
+
+  .shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    opacity: 1;
+    transition-duration: .3s;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .close-btn {
+      color: rgb(196, 196, 196);
+      transition-duration: .3s;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+  }
+
+  &:hover .shape {
+    opacity: 1;
+  }
+
+  &.large {
+    
+    .round-block, .shape {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

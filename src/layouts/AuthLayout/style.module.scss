@@ -1,0 +1,37 @@
+@use "/src/scss/colors";
+
+.layout {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  background-color: colors.$auth-backgorund;
+  display: flex;
+
+  .leftSide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 36px;
+
+    .logo {
+      width: 431px;
+      height: 268px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 109px;
+      line-height: 133px;
+    }
+
+    .subtitleBlock {
+      color: #fff;
+    }
+  }
+
+  .rightSide {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 32px 0px 0px 32px;
+  }
+}

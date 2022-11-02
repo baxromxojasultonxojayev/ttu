@@ -1,0 +1,37 @@
+
+
+.ContextMenu {
+  position: fixed;
+  top: 400px;
+  left: 500px;
+  background-color: #fff;
+  border: 1px solid rgba(192, 192, 192, 0.432);
+  padding: 8px;
+  min-width: 190px;
+  max-width: 350px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+
+.ContextMenuRow {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  .icon {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: #0067F4;
+    color: #fff;
+
+    .icon {
+      color: #fff;
+    }
+  }
+
+}

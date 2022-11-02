@@ -1,0 +1,16 @@
+
+
+.UserInfoBlock {
+
+  display: flex;
+  align-items: center;
+
+  .info-block {
+    margin-left: 10px;
+
+    .title {
+      font-weight: bold;
+    }
+  }
+
+}

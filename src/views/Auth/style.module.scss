@@ -1,0 +1,111 @@
+@use "/src/scss/colors";
+
+.page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 48px 0 60px;
+  height: 100vh;
+  overflow-y: auto;
+  box-shadow: -19px 4px 85px rgba(0, 0, 0, 0.05);
+  border-radius: 30px 0px 0px 30px;
+  // padding-top: 244px;
+
+  .title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 48px;
+    color: #848484;
+  }
+
+  .typeSwitchRow {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 48px;
+
+    .typeSwitchButton {
+      padding: 15px 24px;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1.5px solid rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+      cursor: pointer;
+      transition-duration: 0.3s;
+
+      &.active {
+        border-color: colors.$primary;
+        color: colors.$primary;
+
+        &:hover {
+          border-color: colors.$primary;
+        }
+      }
+
+      &:hover {
+        border-color: #000;
+        // color: colors.$primary;
+      }
+    }
+  }
+
+  .form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .formArea {
+      flex: 1;
+
+      .formRow {
+        .label {
+          font-weight: 600;
+          margin-bottom: 12px;
+          font-size: 16px;
+        }
+        margin-bottom: 20px;
+      }
+      .buttonsArea {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin-top: 48px;
+      }
+    }
+  }
+}
+
+.publickOfferRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  box-shadow: inset 0px -1px 0px #e5e9eb;
+
+  .nameBlock {
+    flex: 1;
+
+    .fileName {
+      line-height: 24px;
+    }
+
+    .fileSize {
+      color: #84919a;
+    }
+  }
+}
+
+.checkboxLabel {
+  color: colors.$grey;
+}

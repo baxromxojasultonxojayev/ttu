@@ -1,0 +1,60 @@
+@use '/src/scss/colors';
+
+.header {
+  height: 56px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-shadow: inset 0px -1px 0px #E5E9EB;
+
+  &.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+  }
+
+  .leftSide {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .icon {
+      font-size: 22px;
+      margin-right: 8px;
+      color: colors.$primary;
+    }
+
+    .titleBlock {
+
+
+      .title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+      }
+
+      .subtitle {
+        font-size: 15px;
+        font-weight: 500;
+        color: gray;
+      }
+    }
+
+    .line {
+      height: calc(100% - 32px);
+      width: 1px;
+      background-color: colors.$borders;
+      margin: 0 24px;
+    }
+
+
+  }
+  
+  
+}
+
+
+

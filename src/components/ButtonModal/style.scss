@@ -1,0 +1,16 @@
+.button {
+  border: 1px solid #e5e9eb;
+  padding: 3px 16px 3px 12px;
+  border-radius: 6px;
+  background: white !important;
+
+  .customButton {
+    column-gap: 12px;
+    span {
+      color: #303940;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+}

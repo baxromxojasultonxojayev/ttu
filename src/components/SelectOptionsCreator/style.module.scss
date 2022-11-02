@@ -1,0 +1,36 @@
+
+@use "/src/scss/colors";
+
+.block {
+  padding: 8px 16px;
+  background-color: #F6F8F9;
+  border-radius: 6px;
+
+
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    .input {
+      background-color: #fff;
+    }
+  }
+}
+
+.createButton {
+  background-color: #F6F8F9;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 2px;
+  border-radius: 6px;
+  color: colors.$primary;
+  transition-duration: .2s;
+
+  &:hover {
+    color: colors.$primary-hover;
+  }
+}

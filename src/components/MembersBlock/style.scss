@@ -1,0 +1,57 @@
+
+
+.MembersBlock {
+  position: relative;
+
+  .context-block {
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid rgba(192, 192, 192, 0.432);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    padding: 8px;
+    min-width: 300px;
+    border-radius: 5px;
+    left: auto;
+    right: 0;
+    z-index: 2;
+
+    .header {
+      padding-bottom: 10px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .title {
+      margin: 15px 0 10px 0;
+    }
+
+    .selected-members-block {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .found-members-block {
+      max-height: 180px;
+      overflow-y: auto;
+
+      .row {
+        display: flex;
+        align-items: center;
+        padding: 2px 5px;
+
+        &:hover {
+          background-color: rgba(145, 158, 171, 0.08);
+          cursor: pointer;
+        }
+
+        .name {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
